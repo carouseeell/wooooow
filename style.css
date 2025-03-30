@@ -1,0 +1,227 @@
+html, body {
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative;
+    top: 62%;
+    transform: translateY(-60%);
+  }
+  
+  body {
+    display: flex;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  body.dark {
+    background: #101010;
+    color: #eaeaea;
+  }
+  
+  .stendig {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 520px;
+    margin: auto;
+    position: relative;
+    padding-top: 88px;
+    top: -44px;
+  }
+
+  .stendig td {
+    font-weight: 780;
+  }
+
+  .stendig .days {
+    font-weight: 1000;
+  }
+  
+  .stendig h2 {
+    position: absolute;
+    top: 0;
+    letter-spacing: -1px;
+    font-size: 150%;
+  }
+  
+  .stendig .year {
+    left: 20px;
+  }
+
+  .stendig .year2 {
+    right: 0px;
+  }
+  
+  .stendig .month {
+    text-align: center;
+    left: 200px;
+    color: red;
+  }
+
+  .stendig table td {
+    text-align: center;
+  }
+
+  .stendig table {
+    width: 504px;
+    font-size: 45px;
+    border-spacing: 0;
+  
+  thead {
+    vertical-align: top;
+    font-weight: bolder;
+  }
+  
+    &:hover td.today {
+      color: #7512ed;
+    }
+  }
+  
+     Kerning mixins
+    &.k3 {
+      letter-spacing: -3px;
+    }
+  
+    &.k10 {
+      letter-spacing: -10px;
+    }
+  
+    &.k13 {
+      letter-spacing: -13px;
+    }
+  
+  body.dark .stendig {
+    table td {
+      border-color: #fff;
+    }
+  
+    &:hover td.today {
+      color: #ed1278;
+    }
+  }
+  
+      .k10 {
+        letter-spacing: -5px;
+      }
+  
+      .k13 {
+        letter-spacing: -8px;
+      }
+      
+      h2 {
+        font-size: 1em;
+      }
+  
+      table {
+        width: 320px;
+        font-size: 35px;
+      }
+  
+      table td {
+        width: 46px;
+        height: 27px;
+        letter-spacing: -3px;
+      }
+  
+      .year {
+        left: 184px;
+        color: #101010;
+      }
+  
+      .month {
+        left: 230px;
+      }
+
+      .year2 {
+        border: none;
+        background-color: inherit;
+        padding: 20px -10px;
+        font-size: 16px;
+        cursor: pointer;  
+        display: inline-block;
+      }
+      
+      /* On mouse-over */
+      .year2:hover {
+        background: #eee;
+        border-radius: 8px;
+      }
+      
+      .year2 {color: rgb(162, 162, 162);}
+
+      .year3 {
+        color: rgb(162, 162, 162);
+      }
+
+      .march {
+        text-align: center;
+        left: 220px;
+        color: red;
+      }
+
+      .year4 {
+        right: 30px;
+        color: rgb(162, 162, 162);
+      }
+
+      .april {
+        text-align: center;
+        left: 220px;
+        color: red;
+      }
+
+      .may {
+        text-align: center;
+        left: 230px;
+        color: red;
+      }
+
+      .year5 {
+        right: 30px;
+        color: rgb(162, 162, 162);
+      }
+
+      .july {
+        text-align: center;
+        left: 220px;
+        color: red;
+      }
+
+      .year6 {
+        right: 30px;
+        color: rgb(162, 162, 162);
+      }
+
+      .year7 {
+        right: 40px;
+        color: rgb(162, 162, 162);
+      }
+
+      .holidays {
+        text-align: center;
+        line-height: 0px;
+        font-family: dm serif display;
+        font-size: 17px;
+      }
+
+      .holiday {
+        font-family: brush script mt;
+        font-size: 30px;
+        color: red; 
+        text-align: center;
+      }
+
+      details {
+        user-select: none;
+      }
+
+      details>summary {
+        transition: all 0.3s;
+      }
+
+      summary {
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+      }
+
+      summary::-webkit-details-marker {
+        display: none;
+      }
